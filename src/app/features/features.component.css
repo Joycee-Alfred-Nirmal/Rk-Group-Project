@@ -1,0 +1,41 @@
+.features {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .heading span {
+    color: #3f51b5; /* Using Angular Material primary color */
+  }
+  
+  .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .box {
+    width: 300px;
+  }
+  
+  .mat-card {
+    text-align: left;
+  }
+  
+  .mat-card img {
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  p{
+    font-size: small;
+  }
+
+  /* #exp{
+    font-size: xx-small;
+  } */

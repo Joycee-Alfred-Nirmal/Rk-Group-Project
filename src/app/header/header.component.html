@@ -1,0 +1,41 @@
+<mat-toolbar >
+
+  <a routerLink="/">
+    <img src="../../assets/images/logo.png" alt="Logo" class="logo">
+  </a>
+
+  <span class="spacer"></span>
+
+  <div class="nav-container">
+    <a routerLink="/home" class="header">Home</a>
+    <a routerLink="/about" class="header">About Us</a>
+    <nav>
+      <button mat-button [matMenuTriggerFor]="menu" class="nav-link" >
+        Services
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/agriculture">Agriculture</button>
+        <button mat-menu-item routerLink="/railways">Railways</button>
+      </mat-menu>
+    </nav>
+    <a routerLink="/contact" class="header">Contact</a>
+  </div>
+
+  <span class="spacer"></span>
+
+  <div class="icon-container">
+    <a routerLink="/register">
+      <mat-icon class="example-icon">login</mat-icon>
+    </a>
+    <a routerLink="/search"><mat-icon class="example-icon">search</mat-icon></a>
+    <a routerLink="/cart">
+      <mat-icon class="example-icon">shopping_cart</mat-icon>
+    </a>
+    <a routerLink="/logout">
+      <mat-icon class="example-icon">logout</mat-icon>
+    </a>
+  </div>
+
+ </mat-toolbar>
+
+  <router-outlet></router-outlet>

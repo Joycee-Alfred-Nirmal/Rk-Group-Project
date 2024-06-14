@@ -1,0 +1,43 @@
+#products {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  #h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  #h2 span {
+    color: #3f51b5; /* Angular Material primary color */
+  }
+  
+  .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .box {
+    width: 300px;
+  }
+  
+  .mat-card {
+    text-align: left;
+  }
+  
+  .mat-card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .stars {
+    display: block;
+  }
+  
+  .mat-icon {
+    font-size: 1.5rem;
+  }
+  
+  

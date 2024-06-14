@@ -1,0 +1,22 @@
+<section id="products">
+    <h1 id="h2"><span>OUR PRODUCTS </span></h1>
+    <div class="box-container">
+      <mat-card *ngFor="let product of products" class="box">
+        <img mat-card-image [src]="product.imgSrc" [alt]="product.title">
+        <mat-card-content>
+          <h3>{{ product.title }}</h3>
+          <div class="stars">
+            <ng-container *ngFor="let star of [].constructor(product.rating); let i = index">
+              <mat-icon color="primary">star</mat-icon>
+            </ng-container>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary" type="submit">Add to Cart</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </section>
+
+  <app-footer></app-footer>
+  

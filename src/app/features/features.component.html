@@ -1,0 +1,44 @@
+<section class="features">
+    <h1 class="heading"> OUR <span> FEATURES </span> </h1>
+    <div class="box-container">
+      <mat-card *ngFor="let feature of features" class="box">
+        <img mat-card-image [src]="feature.imgSrc" [alt]="feature.title">
+        <mat-card-content>
+          <h3>{{ feature.title }}</h3>
+          <p>{{ feature.description }}</p>
+
+        
+          <ng-container *ngIf='feature.expanded' id="exp">
+
+             <ng-container *ngIf ="feature.title == 'Fresh and Organic' ">
+            Organic Production System, Keep The Environment And Ecology Alive And In Good Health By Use Of Natural Resources To Harness Desired Agricultural Production For Human Consumption.
+           
+            </ng-container>
+          </ng-container>
+
+        <ng-container *ngIf='feature.expanded' id="exp">
+          <ng-container *ngIf ="feature.title == 'Oil Seeds' ">
+            The Regulation Process Of Oil Biosynthesis In Plant Through Transcription Factors And Require Additional Exploration. • In Different Species, Genetic And Metabolic Regulation Actually Decides The Quantity Of Oil In Seeds.
+          </ng-container>
+        </ng-container>
+
+        <ng-container *ngIf='feature.expanded'>
+          <ng-container id="exp" *ngIf ="feature.title == 'Railway Services' ">
+            Indian Railways' Record Tender Is Expected To Hit Wagon Procurement By Other Entities. The Industry May Also Struggle To Churn Increasing Wagon Demands Amid Rising Input Prices
+          </ng-container>
+        </ng-container>
+
+
+        </mat-card-content>
+
+
+        <mat-card-actions>
+          <button mat-raised-button color="primary" (click)="toggleExpand(feature)"> 
+            {{feature.expanded ? 'Read less' : 'Read More'}}</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </section>
+
+  <app-products></app-products>
+  

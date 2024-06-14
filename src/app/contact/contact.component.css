@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .left-side {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .right-side {
+    flex: 1;
+  }
+  
+  .details {
+    margin-bottom: 20px;
+  }
+  
+  .topic {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .text-one, .text-two, .text-three, .text-four {
+    font-size: 14px;
+  }
+  
+  .mat-icon {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  .input-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .message-box {
+    width: 100%;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: flex-end;
+  }
+  

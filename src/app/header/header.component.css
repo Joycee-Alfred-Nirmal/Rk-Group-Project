@@ -1,0 +1,40 @@
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 65px; /* Adjust the gap as needed */
+}
+
+.header {
+  text-decoration: none;
+  padding: 0 10px;
+  font-size: large;
+}
+
+
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust the gap as needed */
+}
+
+.nav-link{
+  font-size: large;
+  color:blue;
+}
+
