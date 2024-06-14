@@ -1,0 +1,42 @@
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    height: 80px;
+  }
+  
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  
+  .carousel-control.prev {
+    left: 0;
+  }
+  
+  .carousel-control.next {
+    right: 0;
+  }
+  

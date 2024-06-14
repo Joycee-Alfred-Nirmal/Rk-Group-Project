@@ -1,0 +1,63 @@
+<section class="sec1">
+
+    <div>
+      <img mat-card-image class="img1" src="assets/images/corn.jpeg">
+      <h1>
+        AGRICULTURE
+      </h1>
+
+      <p class="para1">
+        Seeds production programmes are taken at various places in state of Telangana and Andhra Pradesh on farmers fields. We are supplying basic seeds i.e. foundation seeds in required quantity, technical advice and finance according to need basis. Nucleus breeder and foundation seeds programmes are taken at our R&D stations under supervision of the breeder.
+      </p>
+    </div>
+  
+    <div class="elementor-widget-container col-sm-6" style="padding: 10px;">
+      <img src="assets/images/13.jpg" class="img-rounded corners" width="650px" height="380px">
+      <p>
+        RK Seeds is a user-oriented centralized portal. Envisioned and created by the Ministry of Agriculture and Farmers’ Welfare, Govt. of India. RK Group provides a holistic approach to encompass the complete seed life cycle over multiple seed generations. This measure is achieved through automation of the entire seed supply chain, starting from seed production to certification, licensing, seed Inventory, and seed sale by certified dealers to seed growers and includes traceability of seeds.
+      </p>
+    </div>
+  
+    <div class="container">
+      <div id="practices" class="container-fluid col-sm-6">
+        <h1>
+          <span style=" font-size: 30px; font-family: 'Arial Narrow Bold', sans-serif;">
+            Seeds Packaging
+          </span>
+        </h1>
+        <p>Seeds packaging is the process of preparing seeds for storage, distribution, and sale.</p>
+        <h3>Several key functions</h3>
+        <p class="fa fa-arrow-circle-right" style="font-size: 16px;">
+          <br> <b><u>Protection:</u></b> Seed packaging needs to shield the seeds from various threats like physical damage from bumps or crushing,
+          moisture from the environment, exposure to sunlight which can harm germination,
+          and infestation by insects, rodents, or diseases.
+          <br> <b><u>Preservation:</u></b> The packaging should help maintain optimal conditions for seed viability by controlling moisture content and temperature.
+          This ensures the seeds remain healthy and have a high germination rate when planted.
+          <span *ngIf="!showMore">.....</span>
+          <span *ngIf="showMore">
+            <br> <b><u>Information:</u></b> Seed packets and labels typically provide important information for gardeners, such as the type of seed, variety, planting instructions, and sowing time.
+            This empowers users to make informed decisions about planting and growing.
+          </span>
+        </p>
+        <button mat-raised-button color="primary" (click)="toggleReadMore()">
+          {{ showMore ? 'Read less' : 'Read more' }}
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <div id="practices" class="container4">
+  
+    <div class="video" style="padding: 10px;">
+      <iframe width="600" height="380" src="https://www.youtube.com/embed/8Cda6QTnfbY" title="What is Smart Agriculture? Understanding the smart farming | IoTDunia #smartagriculture #smartfarm?controls=0">
+      </iframe>
+    </div>
+  
+    <div class="video" style="padding: 10px;">
+      <iframe width="600" height="380" src="https://www.youtube.com/embed/483If9zGMgo" title="Jam Jam Group | Cotton Seed Processing | Cotton Seed Storage | Seed Company | India | Thailand" frameborder="0">
+      </iframe>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+  

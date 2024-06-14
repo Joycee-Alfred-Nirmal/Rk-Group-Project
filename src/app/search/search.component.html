@@ -1,0 +1,28 @@
+<form [formGroup]="searchForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Search</mat-label>
+      <input matInput formControlName="query" />
+      <button mat-icon-button matSuffix *ngIf="searchForm.get('query')?.value" (click)="clearSearch()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+</form>
+ 
+
+<section class="container">
+  
+  <mat-card>
+    <mat-card-content *ngFor="let item of filteredItems">
+      <div class="card">
+      <img matListAvatar [src]="item.imageUrl" alt="{{ item.name }}" />
+      <h3 matLine>{{ item.name }}</h3>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+</section>
+
+
+
+<app-footer></app-footer>
+  

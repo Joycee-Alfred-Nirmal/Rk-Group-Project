@@ -1,0 +1,45 @@
+<div class="container">
+  
+    <h1>REGISTER PAGE</h1>
+  
+    <form [formGroup]="registerpage" id="registerpage"   (ngSubmit)="onSubmit()">
+  
+      <div class="row">
+        <div class="col">
+          <mat-form-field appearance="fill">
+            <input matInput type="text" formControlName="username" placeholder="*name">
+            <div *ngIf="username?.invalid && username?.dirty || username?.touched">
+              <mat-error *ngIf="username?.errors?.['required']">name is mandatory</mat-error>
+              <mat-error *ngIf="username?.errors?.['minlength']">name must have at least 3 chars</mat-error>
+            </div>
+          </mat-form-field>
+        </div>
+  
+        <div class="col">
+          <mat-form-field appearance="fill">
+            <input matInput type="password" formControlName="password" placeholder="*password">
+            <div *ngIf="password?.invalid && password?.dirty || password?.touched">
+              <mat-error *ngIf="password?.errors?.['required']">password is mandatory</mat-error>
+              <mat-error *ngIf="password?.errors?.['minlength']">password must be at least 3 chars</mat-error>
+            </div>
+          </mat-form-field>
+        </div>
+  
+        <div class="col">
+          <mat-form-field appearance="fill">
+            <input matInput type="email" formControlName="emailId" placeholder="*email">
+            <div *ngIf="emailId?.invalid && emailId?.dirty || emailId?.touched">
+              <mat-error *ngIf="emailId?.errors?.['required']">email is mandatory</mat-error>
+              <mat-error *ngIf="emailId?.errors?.['email']">Email must be a valid email address.</mat-error>
+            </div>
+          </mat-form-field>
+        </div>
+      </div>
+  
+      <button color="primary" mat-button mat-raised-button  type="submit" [disabled]="registerpage.invalid">submit</button>
+      <button color="primary" routerLink= '/login'>sign in</button>
+   
+    </form>
+    
+  </div>
+  
