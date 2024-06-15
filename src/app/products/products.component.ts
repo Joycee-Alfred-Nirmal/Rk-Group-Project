@@ -15,7 +15,9 @@ export class ProductsComponent {
     { imgSrc: 'assets/images/21.jpeg', title: 'RK Soya Beens Seeds', rating: 5 },
     { imgSrc: 'assets/images/22.jpeg', title: 'RK Chilli Seeds', rating: 5 },
     { imgSrc: 'assets/images/wheat.jpg', title: 'Wheat Seeds', rating: 5 },
-    { imgSrc: 'assets/images/sesame.jpg', title: 'Sesame Seeds', rating: 5 }
+    { imgSrc: 'assets/images/sesame.jpg', title: 'Sesame Seeds', rating: 5 },
+    { imgSrc: 'assets/images/demu.jpg' , title: 'Demu coach', rating:5},
+    { imgSrc: 'assets/images/coach.jpg' , title: 'coach', rating:5}
   ];
 
 }

@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "docs/my-app",
+            "outputPath": "dist/my-app",
              "baseHref": "/Rk-Group-Project/",
             "index": "src/index.html",
             "browser": "src/main.ts",
