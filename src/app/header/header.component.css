@@ -1,8 +1,10 @@
+/* Base styles for toolbar */
 mat-toolbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  position: relative;
 }
 
 .logo {
@@ -16,25 +18,69 @@ mat-toolbar {
 .nav-container {
   display: flex;
   align-items: center;
-  gap: 65px; /* Adjust the gap as needed */
+  gap: 65px;
 }
 
 .header {
   text-decoration: none;
   padding: 0 10px;
   font-size: large;
+  
 }
-
-
 
 .icon-container {
   display: flex;
   align-items: center;
-  gap: 10px; /* Adjust the gap as needed */
+  gap: 10px;
 }
 
-.nav-link{
+.nav-link {
   font-size: large;
-  color:blue;
+  color: white;
 }
+
+.hamburger {
+  display: none;
+  border: none;
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show hamburger icon on mobile */
+  }
+
+  .nav-container {
+    display: none; /* Hide nav links by default on mobile */
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    padding: 10px 0;
+    background-color: lightgreen;
+  }
+
+  .nav-container.show {
+    display: flex; /* Show nav links when menu is toggled */
+  }
+
+  .header, .nav-link {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-size: small;
+  }
+
+}
+
+  /* .icon-container {
+    display: none; /* Hide icons on mobile */
+  /* } */ 
+
+
 

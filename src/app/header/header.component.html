@@ -4,21 +4,25 @@
     <img src="../../assets/images/logo.png" alt="Logo" class="logo">
   </a>
 
+  <button class="hamburger" (click)="toggleMenu()" aria-label="Toggle navigation menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+
   <span class="spacer"></span>
 
-  <div class="nav-container">
-    <a routerLink="/home" class="header">Home</a>
-    <a routerLink="/about" class="header">About Us</a>
+  <div class="nav-container" [class.show]="menuOpen">
+    <a routerLink="/home" class="header" (click)="closeMenu()">Home</a>
+    <a routerLink="/about" class="header" (click)="closeMenu()">About Us</a>
     <nav>
       <button mat-button [matMenuTriggerFor]="menu" class="nav-link" >
         Services
       </button>
       <mat-menu #menu="matMenu">
-        <button mat-menu-item routerLink="/agriculture">Agriculture</button>
-        <button mat-menu-item routerLink="/railways">Railways</button>
+        <button mat-menu-item routerLink="/agriculture" (click)="closeMenu()">Agriculture</button>
+        <button mat-menu-item routerLink="/railways" (click)="closeMenu()">Railways</button>
       </mat-menu>
     </nav>
-    <a routerLink="/contact" class="header">Contact</a>
+    <a routerLink="/contact" class="header" (click)="closeMenu()">Contact</a>
   </div>
 
   <span class="spacer"></span>
