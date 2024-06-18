@@ -33,10 +33,34 @@
   }
   
   .carousel-control.prev {
-    left: 0;
+    left: 10;
   }
   
   .carousel-control.next {
-    right: 0;
+    right: 10;
   }
   
+  @media (max-width: 600px) {
+    .carousel-item {
+      height: 200px;
+    }
+    .carousel-control {
+      width: 30px;
+      height: 30px;
+      top: 85%;
+    }
+    
+    .carousel-control.prev {
+      left: 5px;
+    }
+    
+    .carousel-control.next {
+      right: 5px;
+    }
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
