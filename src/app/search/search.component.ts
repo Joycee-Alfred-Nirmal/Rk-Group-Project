@@ -14,11 +14,11 @@ export class SearchComponent implements OnInit{
     { name: 'RK Cotton Seeds', imageUrl: 'assets/images/9.jpg' },
     { name: 'RK Groundnut Seeds', imageUrl: 'assets/images/10.jpg' },
     { name: 'RK Maiza Seeds', imageUrl: 'assets/images/11.jpg' },
-    { name: 'RK Pearl Seeds', imageUrl: 'assets/images/20.jpeg' },
-    { name: 'RK Soya Beens Seeds', imageUrl: 'assets/images/21.jpeg' },
+    { name: 'RK Jowar Seeds', imageUrl: 'assets/images/20.jpeg' },
+    { name: 'RK Green gram Seeds', imageUrl: 'assets/images/21.jpeg' },
     { name: 'RK Chilli Seeds', imageUrl: 'assets/images/22.jpeg' },
-    { name: 'Wheat Seeds', imageUrl: 'assets/images/wheat.jpg' },
-    { name: 'Sesame Seeds', imageUrl: 'assets/images/sesame.jpg' }
+    { name: 'RK Wheat Seeds', imageUrl: 'assets/images/wheat.jpg' },
+    { name: 'RK Sesame Seeds', imageUrl: 'assets/images/sesame.jpg' }
   ];
   filteredItems: { name: string, imageUrl: string }[] = [];
 
