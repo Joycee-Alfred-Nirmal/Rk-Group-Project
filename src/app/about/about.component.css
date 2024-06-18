@@ -1,37 +1,70 @@
+/* Base styles for About Us section */
 .sec1 {
-    padding: 20px;
-  }
-  
-  .text-center {
-    text-align: center;
-    
+  padding: 20px;
 }
 
-  .text-start{
- margin-top: 10px;
-   width: 650px;
+.text-center {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img-container {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.text-start {
+  margin-top: 10px;
+  width: 50%;
+}
+
+.img1 {
+  width: 100%;
+}
+
+.img2 {
+  width: 100%;
+  max-width: 400px;
+}
+
+.about-card {
+  flex: 1 1 auto;
+  margin: 10px 0;
+  padding: 10px;
+  max-width: 600px;
+}
+
+.img-rounded {
+  border-radius: 8px;
+}
+
+.corners {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .last img{
-    
-   width: 650px;
-  }
-  
-  .about-card {
-    margin: 10px 0;
-    padding: 10px;
-  }
-  
-  .img-rounded {
-    border-radius: 8px;
-  }
-  
-  .corners {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  .text-start {
+    width: 100%;
     margin-bottom: 20px;
   }
 
-  .img1{
+  .about-card {
     width: 100%;
   }
-  
+
+  .img1, .img2 {
+    width: 100%;
+  }
+}
