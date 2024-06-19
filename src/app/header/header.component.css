@@ -25,7 +25,6 @@ mat-toolbar {
   text-decoration: none;
   padding: 0 10px;
   font-size: large;
-  
 }
 
 .icon-container {
@@ -42,6 +41,7 @@ mat-toolbar {
 .hamburger {
   display: none;
   border: none;
+  background: none;
   color: black;
   font-size: 15px;
   cursor: pointer;
@@ -75,11 +75,16 @@ mat-toolbar {
     padding: 5px;
     font-size: small;
   }
+
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    gap: 20px; /* Space between icons */
+  }
+
+  .example-icon {
+    font-size: 24px; /* Smaller icon size for mobile view */
+  }
 }
-
-/* /* .icon-container {
-    display: none; /* Hide icons on mobile */
-   /*  */
-
-  
-

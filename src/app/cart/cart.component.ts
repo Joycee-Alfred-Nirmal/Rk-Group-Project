@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { products } from '../Models/products';
 import { Router } from '@angular/router';
+import { CartItem, CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-cart',
@@ -9,15 +10,21 @@ import { Router } from '@angular/router';
 })
 export class CartComponent implements OnInit {
 
-  cartList:products[]=[];
+  cartItems: CartItem[] = [];
 
-  cart:any=[]
- 
-constructor(private router:Router){}
+  constructor(private cartService: CartService) {}
 
   ngOnInit(): void {
-        console.log(Response)
+    this.cartService.cart$.subscribe(items => {
+      this.cartItems = items;
+    });
+  }
 
-      };
+  removeFromCart(title: string) {
+    this.cartService.removeFromCart(title);
+  }
 
+  clearCart() {
+    this.cartService.clearCart();
+  }
 }

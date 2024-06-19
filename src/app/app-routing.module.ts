@@ -1,5 +1,4 @@
 import { RouterModule, Routes } from '@angular/router';
-import { RegisterComponent } from './register/register.component';
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './home/home.component';
 import { FeaturesComponent } from './features/features.component';
@@ -8,10 +7,8 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { CartComponent } from './cart/cart.component';
-import { LoginComponent } from './login/login.component';
 import { AgricultureComponent } from './agriculture/agriculture.component';
 import { RailwaysComponent } from './railways/railways.component';
-import { LogoutComponent } from './logout/logout.component';
 import { SearchComponent } from './search/search.component';
 
 
@@ -20,9 +17,6 @@ import { SearchComponent } from './search/search.component';
 
       {
         path:'', component: HomeComponent
-      },
-      {
-        path:'register',component: RegisterComponent
       },
 
       {
@@ -47,16 +41,10 @@ import { SearchComponent } from './search/search.component';
         path:'cart' , component:CartComponent
       },
       {
-        path:'login' , component: LoginComponent
-      },
-      {
         path:'agriculture' , component: AgricultureComponent
       },
       {
         path:'railways' , component: RailwaysComponent
-      },
-      {
-        path:'logout' , component: LogoutComponent
       },
       {
         path:'search' , component: SearchComponent
