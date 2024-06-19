@@ -17,6 +17,7 @@ export class ProductsComponent {
     { imgSrc: 'assets/images/22.jpeg', title: 'RK Chilli Seeds', rating: 5 },
     { imgSrc: 'assets/images/wheat.jpg', title: 'RK Wheat Seeds', rating: 5 },
     { imgSrc: 'assets/images/sesame.jpg', title: 'RK Sesame Seeds', rating: 5 },
+   
   ];
 
   cartItems: CartItem[] = [];

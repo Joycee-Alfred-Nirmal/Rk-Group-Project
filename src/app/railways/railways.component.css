@@ -34,6 +34,15 @@
   margin-bottom: 20px;
 }
 
+.images{
+  display: flex;
+  gap: 10px; /* Space between images */
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  
+}
+
 /* Mobile view styles */
 @media (max-width: 768px) {
   .img-text-container {
