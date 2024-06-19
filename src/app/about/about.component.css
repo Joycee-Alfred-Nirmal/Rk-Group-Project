@@ -33,10 +33,11 @@
 }
 
 .about-card {
-  flex: 1 1 auto;
+  /* flex: 1 1 auto;
   margin: 10px 0;
   padding: 10px;
-  max-width: 600px;
+  max-width: 600px; */
+  width: 100%;
 }
 
 .img-rounded {
