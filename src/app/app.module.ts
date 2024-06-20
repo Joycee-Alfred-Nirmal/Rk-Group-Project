@@ -24,6 +24,7 @@ import { AgricultureComponent } from './agriculture/agriculture.component';
 import { RailwaysComponent } from './railways/railways.component';
 import { MatListModule} from '@angular/material/list';
 import { SearchComponent } from './search/search.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -56,6 +57,7 @@ import { SearchComponent } from './search/search.component';
       MatCardModule,
       MatMenuModule,
       MatListModule,
+      BrowserAnimationsModule
     
      
       ],

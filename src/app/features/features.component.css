@@ -21,6 +21,12 @@
   
   .box {
     width: 300px;
+    transition: opacity 0.5s ease-in;
+    opacity: 0;
+  }
+
+  .box.visible{
+    opacity: 1;
   }
   
   .mat-card {
@@ -36,6 +42,4 @@
     font-size: small;
   }
 
-  /* #exp{
-    font-size: xx-small;
-  } */
+  

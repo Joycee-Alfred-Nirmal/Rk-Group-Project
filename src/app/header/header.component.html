@@ -1,4 +1,4 @@
-<mat-toolbar >
+<mat-toolbar class="toolbar">
 
   <a routerLink="/">
     <img src="../../assets/images/logo.png" alt="Logo" class="logo">
@@ -14,10 +14,10 @@
     <a routerLink="/home" class="header" (click)="closeMenu()">Home</a>
     <a routerLink="/about" class="header" (click)="closeMenu()">About Us</a>
     <nav>
-      <button mat-button [matMenuTriggerFor]="menu" class="nav-link" >
+      <button mat-button [matMenuTriggerFor]="menu" class="nav-link" matTooltip="Services">
         Services
       </button>
-      <mat-menu #menu="matMenu">
+      <mat-menu #menu="matMenu" class="dropdown-menu">
         <button mat-menu-item routerLink="/agriculture" (click)="closeMenu()">Agriculture</button>
         <button mat-menu-item routerLink="/railways" (click)="closeMenu()">Railways</button>
       </mat-menu>
