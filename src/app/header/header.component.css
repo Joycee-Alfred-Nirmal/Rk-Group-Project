@@ -62,7 +62,10 @@ mat-toolbar.toolbar {
 /* Mobile view styles */
 @media (max-width: 768px) {
   .hamburger {
-    display: block; /* Show hamburger icon on mobile */
+    display: flex; /* Show hamburger icon on mobile */
+  
+   
+
   }
 
   .nav-container {
@@ -75,6 +78,8 @@ mat-toolbar.toolbar {
     z-index: 10;
     padding: 10px 0;
     background-color: #4caf50;
+    padding-left: 100px;
+    
   }
 
   .nav-container.show {
@@ -91,12 +96,13 @@ mat-toolbar.toolbar {
   .icon-container {
     display: flex;
     justify-content: center;
-    width: 100%;
     margin-top: 10px;
-    gap: 20px; /* Space between icons */
+    gap: 5px; /* Space between icons */
   }
 
   .example-icon {
     font-size: 24px; /* Smaller icon size for mobile view */
   }
+
+  
 }

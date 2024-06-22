@@ -55,8 +55,34 @@
   @media (max-width: 600px) {
 
     .heading{
-      font-size: 1.5rem;
+      font-size: 1rem;
+      padding: 0px;
     }
+
+    .mat-card img{
+      height: 200px;
+    }
+
+    .box-container{
+      display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    
+    }
+
+    .box{
+      padding: 20px;
+      font-size: 14px;
+    }
+    .box img{
+        padding: 50px;
+        }
+    p{
+      font-size: 13px;
+    }
+
+    
   }
   
   
