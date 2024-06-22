@@ -8,7 +8,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 export class HomeComponent implements OnInit, OnDestroy {
 
   slides = [
-    { src: 'assets/images/web1.jpg', alt: 'agri' },
+    { src: 'assets/images/web3.jpg', alt: 'agri' },
     { src: 'assets/images/rice.jpg', alt: 'maiza' },
     { src: 'assets/images/coach11.jpg', alt: 'New York' },
     { src: 'assets/images/rail1.jpg', alt: 'New York' }
