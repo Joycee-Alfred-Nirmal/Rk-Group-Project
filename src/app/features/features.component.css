@@ -1,17 +1,26 @@
 .features {
     text-align: center;
     padding: 2rem 0;
-    background-color: lightgray;
+    background: #ebebff;
+    background: #eee;
   }
   
-  .heading {
+  .heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
     font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .heading span {
-    color: #3f51b5; /* Using Angular Material primary color */
-  }
+    color:black;
+    
+}
+
+  .heading span{
+    background-color:green;
+    color: #fff;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
   
   .box-container {
     display: flex;
@@ -43,5 +52,11 @@
     font-size: 16px;
   }
 
+  @media (max-width: 600px) {
+
+    .heading{
+      font-size: 1.5rem;
+    }
+  }
   
   

@@ -11,13 +11,6 @@
           </ng-container>
         </div>
       </mat-card-content>
-      <mat-card-actions>
-        <button mat-raised-button color="primary" 
-                [disabled]="isInCart(product)" 
-                (click)="addToCart(product)">
-          {{ isInCart(product) ? 'Added to Cart' : 'Add to Cart' }}
-        </button>
-      </mat-card-actions>
     </mat-card>
   </div>
 </section>

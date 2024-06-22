@@ -1,17 +1,26 @@
 #products {
     text-align: center;
     padding: 2rem 0;
-    background-color: lightgrey;
+    background: #ebebff;
+    background: #eee;
   }
   
-  #h2 {
+  #h2{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
     font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-  
-  #h2 span {
-    color: #3f51b5; /* Angular Material primary color */
-  }
+    color:black;
+    
+}
+
+  #h2 span{
+    background-color:orange;
+    color: #fff;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
   
   .box-container {
     display: flex;
@@ -41,4 +50,9 @@
     font-size: 1.5rem;
   }
   
-  
+  @media (max-width: 600px) {
+
+    #h2{
+      font-size: 1.5rem;
+    }
+  }

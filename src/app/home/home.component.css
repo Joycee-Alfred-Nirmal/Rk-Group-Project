@@ -9,7 +9,7 @@
       }
   
   .carousel {
-    height: 90%;
+    height: 100%;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -46,21 +46,19 @@
   
   @media (max-width: 600px) {
     .carousel-item {
-      height: 200px;
+      height: 50px;
     }
     .carousel-control {
       width: 30px;
-      height: 30px;
+      height: 20px;
       top: 85%;
     }
-    
-    .carousel-control.prev {
-      left: 5px;
+
+    .carousel-container{
+      height: 30%;
     }
     
-    .carousel-control.next {
-      right: 5px;
-    }
+
   }
 
   .carousel-item img {

@@ -6,7 +6,6 @@ import { ProductsComponent } from './products/products.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
-import { CartComponent } from './cart/cart.component';
 import { AgricultureComponent } from './agriculture/agriculture.component';
 import { RailwaysComponent } from './railways/railways.component';
 import { SearchComponent } from './search/search.component';
@@ -37,9 +36,7 @@ import { SearchComponent } from './search/search.component';
       {
         path:'contact' , component: ContactComponent
       },
-      {
-        path:'cart' , component:CartComponent
-      },
+      
       {
         path:'agriculture' , component: AgricultureComponent
       },
