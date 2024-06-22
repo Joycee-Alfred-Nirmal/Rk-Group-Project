@@ -20,7 +20,7 @@ export class FeaturesComponent implements OnInit {
   features: Feature[] = [
     {
       imgSrc: 'assets/images/R.jpg',
-      title: 'Fresh and Organic',
+      title: 'Fresh and Organic Seeds',
       description: 'Organic Farming System Is A Method Of Farming System Which Primarily Aimed At Sustainable Agricultural Production In An Eco-Friendly Pollution Free Environment And Being Followed From Ancient Time In India.' ,
      
      

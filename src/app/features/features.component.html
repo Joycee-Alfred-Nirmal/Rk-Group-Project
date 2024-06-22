@@ -7,10 +7,9 @@
           <h3>{{ feature.title }}</h3>
           <p>{{ feature.description }}</p>
 
-        
-          <ng-container *ngIf='feature.expanded' id="exp">
+          <ng-container *ngIf='feature.expanded' >
 
-             <ng-container *ngIf ="feature.title == 'Fresh and Organic' ">
+             <ng-container *ngIf ="feature.title == 'Fresh and Organic Seeds' " class="exp">
             Organic Production System, Keep The Environment And Ecology Alive And In Good Health By Use Of Natural Resources To Harness Desired Agricultural Production For Human Consumption.
            
             </ng-container>
