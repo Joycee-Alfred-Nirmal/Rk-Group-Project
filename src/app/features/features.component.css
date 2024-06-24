@@ -30,22 +30,30 @@
   }
   
   .box {
-    width: 300px;
+    width: 350px;
     transition: opacity 0.5s ease-in;
     opacity: 0;
+  }
+
+  .box-container .box img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+    
   }
 
   .box.visible{
     opacity: 1;
   }
   
-  .mat-card {
-    text-align: left;
-  }
+
   
-  .mat-card img {
-    height: 150px;
+  mat-card img {
+    height: 250px;
     object-fit: cover;
+    width: 345px;
+    text-align: center;
+    padding: 20px;
   }
   
   p{
@@ -68,6 +76,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 1.5rem;
+
     
     }
 
@@ -84,5 +93,4 @@
 
     
   }
-  
   

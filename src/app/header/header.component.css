@@ -63,8 +63,6 @@ mat-toolbar.toolbar {
 @media (max-width: 768px) {
   .hamburger {
     display: flex; /* Show hamburger icon on mobile */
-  
-   
 
   }
 
@@ -78,7 +76,8 @@ mat-toolbar.toolbar {
     z-index: 10;
     padding: 10px 0;
     background-color: #4caf50;
-    padding-left: 100px;
+    
+    text-align: center;
     
   }
 

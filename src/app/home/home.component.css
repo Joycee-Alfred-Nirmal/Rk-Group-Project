@@ -47,7 +47,7 @@
   
   @media (max-width: 600px) {
     .carousel-item {
-      height: 50px;
+      height: 30px;
     }
     .carousel-control {
       width: 30px;
@@ -57,6 +57,29 @@
 
     .carousel-container{
       height: 30%;
+    }
+    
+
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  @media (max-width: 450px) {
+    .carousel-item {
+      height: 30px;
+    }
+    .carousel-control {
+      width: 30px;
+      height: 20px;
+      top: 85%;
+    }
+
+    .carousel-container{
+      height: 20%;
     }
     
 
