@@ -25,14 +25,12 @@
 .img2 {
   width: 600px;
   height: 380px;
-
 }
+
 
 .para1 {
   font-size: medium;
   display: flex;
- 
-  
 }
 
 h1 span{
@@ -48,8 +46,8 @@ h1 span{
   display: inline-block;
   padding: 1rem;
   padding-left: 30px;
-
 }
+
 
 .container {
   padding: 10px;
