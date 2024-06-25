@@ -3,8 +3,14 @@
   padding: 20px;
 }
 
-.text-center {
-  text-align: center;
+.mat-headline {
+  background-color:green;
+  color: #fff;
+ position: absolute;
+  padding: .8rem 7rem;
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+  
+  
 }
 
 .container {
@@ -15,7 +21,7 @@
 
 .img-container {
   flex: 1 1 auto;
-  text-align: center;
+  text-align: right;
 }
 
 .text-start {
@@ -28,8 +34,11 @@
 }
 
 .img2 {
-  width: 100%;
-  max-width: 400px;
+  width: 600px;
+  height: 350px;
+  margin-right: 13px;
+  margin-top: 50px;
+  
 }
 
 .about-card {
@@ -47,6 +56,22 @@
 .corners {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
+}
+
+.para1{
+  font-size: medium;
+  display: flex;
+  
+}
+
+.container-fluid{
+  text-align: center;
+  margin-left: 50px;
+}
+
+
+.content{
+  margin-top: 65px;
 }
 
 /* Mobile view styles */

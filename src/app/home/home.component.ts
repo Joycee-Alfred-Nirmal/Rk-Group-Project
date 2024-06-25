@@ -9,10 +9,10 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   slides = [
     { src: 'assets/images/web3.jpg', alt: 'agri' },
-    { src: 'assets/images/sl2.jpg', alt: 'maiza' },
+    { src: 'assets/images/sl8.jpg', alt: 'maiza' },
     { src: 'assets/images/sl7.jpg', alt: 'New York' },
     { src: 'assets/images/sl4.jpg', alt: 'New York' },
-    { src: 'assets/images/sl6.jpg', alt: 'New York' },
+   
 
   ];
 

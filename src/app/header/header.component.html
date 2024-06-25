@@ -1,16 +1,16 @@
 <mat-toolbar class="toolbar">
 
-  <a routerLink="/">
+<a routerLink="/">
     <img src="../../assets/images/logo.png" alt="Logo" class="logo">
-  </a>
+</a>
 
-  <button class="hamburger" (click)="toggleMenu()" aria-label="Toggle navigation menu">
+<button class="hamburger" (click)="toggleMenu()" aria-label="Toggle navigation menu">
     <mat-icon>menu</mat-icon>
-  </button>
+</button>
 
-  <span class="spacer"></span>
+<span class="spacer"></span>
 
-  <div class="nav-container" [class.show]="menuOpen">
+<div class="nav-container" [class.show]="menuOpen">
     <a routerLink="/home" class="header" (click)="closeMenu()">Home</a>
     <a routerLink="/about" class="header" (click)="closeMenu()">About Us</a>
     <nav>
@@ -25,14 +25,12 @@
     <a routerLink="/contact" class="header" (click)="closeMenu()">Contact</a>
   </div>
   
-
-  <span class="spacer"></span>
+<span class="spacer"></span>
 
   <div class="icon-container">
     <a routerLink="/search"><mat-icon class="example-icon">search</mat-icon></a>
   </div>
   
+</mat-toolbar>
 
- </mat-toolbar>
-
-  <router-outlet></router-outlet>
+<router-outlet></router-outlet>
