@@ -86,7 +86,7 @@
 
 @media (max-width: 450px) {
   .mat-headline {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .img1{
@@ -101,7 +101,7 @@
   }
 
   .content{
-    width: 320px;
+    width: 300px;
   }
   .about-card p {
     font-size: 14px;
