@@ -1,6 +1,6 @@
 /* Base styles for About Us section */
 .sec1 {
-  padding: 20px;
+  padding: 10px;
 }
 
 .mat-headline {
@@ -25,9 +25,14 @@
   text-align: right;
 }
 
+.text-center,
 .text-start {
-  margin-top: 10px;
-  width: 50%;
+  text-align: center;
+}
+
+.content-container {
+  padding: 7px;
+  width: 100%;
 }
 
 .img1 {
@@ -78,66 +83,78 @@
 }
 
 /* Mobile view styles */
-@media (max-width: 600px) {
 
-body {
-  font-family: 'Arial Narrow Bold', sans-serif;
-}
+@media (max-width: 450px) {
+  .mat-headline {
+    font-size: 13px;
+  }
 
-.text-center {
-  text-align: center;
-}
+  .img1{
+    padding-left: 20px;
+  }
 
-.mat-headline {
-  margin-top: 1px;
-  font-size: 1.0rem;
-}
+  .content-container {
+    padding: 5px;
+  }
 
-.content {
- 
-  margin: 15px 0;
-  text-align: start;
-  margin-top: 55px;
-  
-}
+  .para1{
+    display: inline;
+   
+    
+  }
 
-.img-container {
-  width: 50px;
-}
+  .content{
+    padding: 15px;
+  }
+  .about-card p {
+    font-size: 14px;
+  }
 
-.img1{
-  width: 100%;
-  height: auto;
-}
-.img2 {
-  width: 400px;
-  height: auto;
-}
+  #h1 {
+    font-size: 20px;
+  }
 
-.img-rounded {
-  border-radius: 10px;
-}
+  h2 {
+    font-size: 18px;
+  }
 
-.about-card {
-  background-color: #d0f0c0;
-  margin: 20px 0;
-  padding: 20px;
-  border-radius: 5px;
+  .about-card {
+    padding: 15px;
+  }
 }
 
-#h1 {
-  font-size: 24px;
-  margin: 10px 0;
+/* Media Query for 600px */
+@media (min-width: 451px) and (max-width: 600px) {
+  .mat-headline {
+    font-size: 15px;
+    
+  }
+
+  .para1{
+    display: inline;
+  }
+
+  .content-container {
+    padding: 10px;
+  }
+
+  .content{
+    padding: 20px;
+  }
+  .about-card p {
+    font-size: 15px;
+  }
+
+  #h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .about-card {
+    padding: 20px;
+  }
 }
 
-h2 {
-  font-size: 20px;
-  margin: 10px 0;
-}
-
-.para1{
-  display: inline;
-  background-color: #d0f0c0;
-}
-
-}
