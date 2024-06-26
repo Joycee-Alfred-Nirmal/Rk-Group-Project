@@ -9,6 +9,7 @@
  position: absolute;
   padding: .8rem 7rem;
   clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+  margin-top: 50px;
   
   
 }
@@ -47,6 +48,7 @@
   padding: 10px;
   max-width: 600px; */
   width: 100%;
+  background-color: #d0f0c0;
 }
 
 .img-rounded {
@@ -61,17 +63,18 @@
 .para1{
   font-size: medium;
   display: flex;
+  background-color: #d0f0c0;
   
 }
 
 .container-fluid{
-  text-align: center;
+  text-align: start;
   margin-left: 50px;
 }
 
 
 .content{
-  margin-top: 65px;
+  margin-top: 120px;
 }
 
 /* Mobile view styles */
