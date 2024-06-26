@@ -93,4 +93,8 @@ button {
   .container {
     padding: 0;
   }
+
+  .para1{
+    display: inline;
+  }
 }
