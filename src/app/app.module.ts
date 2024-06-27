@@ -25,6 +25,7 @@ import { MatListModule} from '@angular/material/list';
 import { SearchComponent } from './search/search.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { CareersComponent } from './careers/careers.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { HttpClientModule } from '@angular/common/http';
       ContactComponent,
       AgricultureComponent,
       RailwaysComponent,
-      SearchComponent
+      SearchComponent,
+      CareersComponent
       
 
     ],

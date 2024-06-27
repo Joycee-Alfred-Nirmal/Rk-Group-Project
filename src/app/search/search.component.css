@@ -11,8 +11,11 @@ mat-form-field {
   }
 
   .container{
-    display: block;
+  
+    justify-content: center;
+    flex-wrap: wrap;
+
   }
 
-  
-  
+
+
