@@ -23,6 +23,8 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.startAutoSlide();
   }
 
+  
+
   ngOnDestroy() {
     this.clearAutoSlide();
   }
@@ -33,6 +35,12 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   prev() {
     this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+  }
+
+  setCurrentIndex(index: number) {
+    this.currentIndex = index;
+    this.clearAutoSlide(); // Stop auto-sliding when manually changing slide
+    this.startAutoSlide(); // Restart auto-sliding
   }
 
   startAutoSlide() {

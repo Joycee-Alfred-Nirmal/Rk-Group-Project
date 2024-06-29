@@ -6,6 +6,13 @@
       </mat-card>
     </div>
 
+    <div class="carousel-indicators">
+      <span *ngFor="let slide of slides; let i = index" 
+            [class.active]="i === currentIndex" 
+            (click)="setCurrentIndex(i)">
+      </span>
+</div>
+
   </mat-card>
 </section>
 <app-features></app-features>

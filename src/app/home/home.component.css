@@ -44,6 +44,32 @@
   .carousel-control.next {
     right: 10;
   }
+
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjust spacing between dots */
+    padding-top: 10px; /* Adjust spacing above dots */
+    position: absolute;
+  bottom: 15px; /* Ensure it is placed correctly */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Centering */
+  z-index: 10; /* Above carousel items */
+  }
+  
+  .carousel-indicators span {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px; /* Diameter of the dot */
+    height: 10px;
+    background-color: white; /* Default color of the dot */
+    border-radius: 50%; /* Make the dot circular */
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  .carousel-indicators .active {
+    background-color: black; /* Color of the active dot */
+  }
   
   @media (max-width: 600px) {
     .carousel-item {
