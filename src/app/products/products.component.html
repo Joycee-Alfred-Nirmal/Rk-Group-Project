@@ -1,7 +1,7 @@
 <section id="products">
   <h1 id="h2"><span>OUR PRODUCTS </span></h1>
   <div class="box-container">
-    <mat-card *ngFor="let product of products" class="box">
+    <mat-card *ngFor="let product of products" class="box" [class.visible]="product.visible">
       <img mat-card-image [src]="product.imgSrc" [alt]="product.title">
       <mat-card-content>
         <h3>{{ product.title }}</h3>
@@ -33,6 +33,113 @@
       
        </ng-container>
      </ng-container>
+
+     <ng-container *ngIf='product.expanded' >
+
+      <ng-container *ngIf ="product.title == 'AJEYA Groundnut Seeds' " class="exp">
+        Certainly! Groundnut, also known as peanut, has a specific growing time period. Let’s
+        dive into the details:
+         1. Sowing Time:
+         o Groundnut is typically sown during the Kharif season (monsoon season)
+          in India.
+        o For rainfed crops, sow groundnut around 20th June or 10-12 days before
+        the onset of monsoon with pre-sowing irrigation. This ensures that
+        germination occurs before the rains start, leading to higher yields 1 .
+        o In regions with irrigation facilities, you can also sow groundnut after the
+        onset of monsoon, usually in the last week of June or the first week of
+        July 1 .
+
+        2. Germination and Growth:
+        o After planting the seeds, the first flowers typically appear within 4 to 6
+        weeks and continue blooming for 6 or more weeks 2 .
+        o Groundnuts prefer moderate rainfall during the growing season, ideally
+        between 500 mm to 800 mm annually.
+    
+     </ng-container>
+   </ng-container>
+
+
+   <ng-container *ngIf='product.expanded' >
+
+    <ng-container *ngIf ="product.title == 'Krishna cotton seeds' " class="exp">
+     <span> KRISHNA </span> <br>
+      Krishna cotton seeds typically have a growth duration of about 175 to 225 days from
+      planting to harvest. <br> Here are some key factors to consider when planting cotton seeds: <br>
+      <span>1. Climate and Temperature: </span><br>
+      > Cotton thrives in tropical and subtropical climates. <br>
+      > The minimum temperature for germination is 15ºC. <br>
+      > Optimal vegetative growth occurs between 21 to 27ºC, but cotton can
+      tolerate temperatures up to 43ºC. <br> 
+      > Warm days and cool nights during the fruiting period promote healthy boll
+      and fiber growth. <br>
+      <span>2. Soil Conditions: </span><br>
+      > Cotton grows well in a variety of soils, including well-drained deep alluvial
+      soils in the north (e.g., Punjab, Haryana, Rajasthan) and black clayey soils
+      in the central and southern regions (e.g., Andhra Pradesh, Karnataka,
+      Tamil Nadu). <br>
+      > Avoid excessively salty or wet soils; cotton prefers well-draining soil. <br>
+      > Prepare a fertile seedbed free from weeds and other crop plants. <br>
+      <span>3. Water Requirements: </span><br>
+      > Cotton needs at least 500 mm of water between seed sprouting and boll
+      formation. <br>
+      > Adequate irrigation is crucial for successful growth.
+  
+   </ng-container>
+ </ng-container>
+
+ <ng-container *ngIf='product.expanded' >
+
+  <ng-container *ngIf ="product.title == 'RK Maize Seeds' " class="exp">
+    MAIZE:
+Certainly! Understanding the growth stages of maize is crucial for successful
+cultivation. Here are the key growth stages of maize and their approximate time
+periods:
+1. Emergence:
+o Soil temperature of around 10°C is required for germination.
+o Seeds take an average of 12-17 days to emerge, depending on soil
+temperature 1 .
+o At 50°F (10°C), maize takes about 25 days to emerge; at 55-60°F (13-
+15°C), it takes 10-14 days; and at 65-70°F (18-21°C), it emerges in 5-8
+days 2 .
+
+2. Weaning (4-5 leaf stage):
+o Appearance of new roots (crown roots).
+o Plant is no longer dependent on seed reserves.
+o Sensitivity to nutrient deficiencies, especially phosphorus.
+o Final plant density determined.
+3. Initiation of Ears (8-10 leaf stage):
+o Initiation of ears (number of rows).
+o Elongation stage begins at 10 leaves.
+o High water and nutrient requirements.
+o Sensitive to cold temperatures, low sunlight, and herbicides.
+4. Tassel Visible:
+o Determines the number of ears per plant.
+o 90% of ovules established.
+o Sensitive to water and nitrogen availability.
+5. Female Flowering:
+o Fertilization of ovules by pollen.
+o High sensitivity to water deficit.
+o High temperatures can disrupt grain development.
+
+ </ng-container>
+</ng-container>
+
+<ng-container *ngIf='product.expanded' >
+
+  <ng-container *ngIf ="product.title == 'RK Chilli Seeds' " class="exp">
+    Use the Right Soil:
+o Mirchi plants thrive in well-draining, fertile, and consistently moist soil.
+o Create a growing medium by blending equal parts of vermiculture, perlite,
+compost, sphagnum peat moss, and sand.
+o You can improve soil drainage by adding perlite or grit.
+4. Provide the Right Climate and Sunlight:
+o Place the pot where it receives 3-5 hours of full sun.
+o Chilli plants grow best in warm and humid conditions, with an ideal
+temperature range of 22-32°C.
+ </ng-container>
+</ng-container>
+
+
       </mat-card-content>
       <mat-card-actions>
         <button mat-raised-button color="primary" (click)="toggleExpand(product)"> 

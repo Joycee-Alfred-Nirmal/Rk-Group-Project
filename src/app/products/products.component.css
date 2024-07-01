@@ -2,7 +2,6 @@
     text-align: center;
     padding: 2rem 0;
     background: #ebebff;
-    background: #eee;
   }
   
   #h2{
@@ -22,7 +21,7 @@
     clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
 }
   
-  .box-container {
+  .box-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -31,24 +30,28 @@
   
   .box {
     width: 350px;
-    height: 500px;
-  }
-  
-  .mat-card {
-    text-align: left;
-  }
-  
-  .box img {
-    height: 220px;
-    padding: 20px;
-    width: 340px;
-    
+    transition: opacity 0.5s ease-in;
+    cursor: pointer;
   }
 
   .box-container .box img:hover{
     transform: scale(1.1);
     transition: 0.5s;
     cursor: pointer;
+  }
+  .box.visible{
+    opacity: 1;
+  }
+  .mat-card {
+    text-align: left;
+  }
+  
+  mat-card img{
+    height: 250px;
+    object-fit: cover;
+    width: 345px;
+    text-align: center;
+    padding: 20px;
     
   }
   
@@ -60,11 +63,37 @@
     font-size: 1.5rem;
   }
 
-  
+  span{
+    font-weight: 600;
+  }
   
   @media (max-width: 600px) {
 
     #h2{
       font-size: 1.5rem;
+    }
+
+    .mat-card img{
+      height: 200px;
+    }
+
+    .box-container{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .box{
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    .box img{
+      padding: 50px;
+    }
+
+    p{
+      font-size: 13px;
     }
   }
