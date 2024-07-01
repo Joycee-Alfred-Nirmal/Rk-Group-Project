@@ -22,7 +22,7 @@ import { RouterModule } from '@angular/router';
 import { AgricultureComponent } from './agriculture/agriculture.component';
 import { RailwaysComponent } from './railways/railways.component';
 import { MatListModule} from '@angular/material/list';
-import { SearchComponent } from './search/search.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { CareersComponent } from './careers/careers.component';
@@ -40,7 +40,7 @@ import { CareersComponent } from './careers/careers.component';
       ContactComponent,
       AgricultureComponent,
       RailwaysComponent,
-      SearchComponent,
+     
       CareersComponent
       
 

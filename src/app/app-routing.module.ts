@@ -8,7 +8,6 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { AgricultureComponent } from './agriculture/agriculture.component';
 import { RailwaysComponent } from './railways/railways.component';
-import { SearchComponent } from './search/search.component';
 import { CareersComponent } from './careers/careers.component';
 
 
@@ -44,9 +43,7 @@ import { CareersComponent } from './careers/careers.component';
       {
         path:'railways' , component: RailwaysComponent
       },
-      {
-        path:'search' , component: SearchComponent
-      },
+    
       {
         path:'careers' , component: CareersComponent
       }

@@ -10,7 +10,34 @@
             <mat-icon color="primary">star</mat-icon>
           </ng-container>
         </div>
+
+        <ng-container *ngIf='product.expanded' >
+
+          <ng-container *ngIf ="product.title == 'RK Sesame Seeds' " class="exp">
+            While both black and white sesame seeds are good for overall health, black
+            sesame seeds are particularly beneficial for menstrual health. <br>
+            White sesame seeds are also occasionally planted, but black or brown
+            sesame seeds are more common in the U.S.2.
+        
+         </ng-container>
+       </ng-container>
+
+       <ng-container *ngIf='product.expanded' >
+
+        <ng-container *ngIf ="product.title == 'RK Wheat Seeds' " class="exp">
+          Planting Time: Fall (before winter). <br>
+          Growth Period: Starts growing before winter, slows down during cold
+          months, and resumes growth in spring. <br>
+          Harvest Time: Late spring or early summer. <br>
+          Duration: Approximately 7-9 months from planting to harvest 1.
+      
+       </ng-container>
+     </ng-container>
       </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="toggleExpand(product)"> 
+          {{product.expanded ? 'Read less' : 'Read More'}}</button>
+      </mat-card-actions>
     </mat-card>
   </div>
 </section>
